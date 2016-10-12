@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff"
+        android:focusable="true"
+        android:backgroundTint="@color/yellow">
+
+        <Button android:id="@+id/btLOGOUT"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="LOGOUT"
+            android:background="@color/green1"
+            android:clickable="true"
+            android:layout_marginBottom="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button android:id="@+id/btchangePASS"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="CHANGE PASSWORD"
+            android:background="@color/green1"
+            android:layout_marginBottom="22dp"
+            android:clickable="true"
+            android:layout_above="@+id/btLOGOUT"
+            android:layout_alignLeft="@+id/btLOGOUT"
+            android:layout_alignStart="@+id/btLOGOUT" />
+
+        <Button android:id="@+id/btneditINFO"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="EDIT INFO"
+            android:background="@color/green1"
+            android:layout_marginBottom="26dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_above="@+id/btchangePASS"
+            android:layout_centerHorizontal="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="NAME: "
+            android:textStyle="bold"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:id="@+id/textView" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="EMAIL: "
+            android:textStyle="bold"
+            android:layout_below="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView2" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="PHONE: "
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:id="@+id/textView9" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header"
+            android:id="@+id/linearLayout">
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#263ed7"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:id="@+id/wlcmheader"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff4069"
+                android:text="YOUR PROFILE"
+                android:layout_marginTop="37dp"
+                android:textStyle="bold"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/textView6"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/btneditINFO"
+            android:layout_alignStart="@+id/btneditINFO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/textView7"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView8"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit"
+            android:id="@+id/editemail"
+            android:textIsSelectable="true"
+            android:textColor="#0f22ef"
+            android:textSize="15dp"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_toRightOf="@+id/btneditINFO"
+            android:layout_toEndOf="@+id/btneditINFO"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit"
+            android:id="@+id/editphone"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignLeft="@+id/editemail"
+            android:layout_alignStart="@+id/editemail"
+            android:textIsSelectable="true"
+            android:textColor="#0f22ef"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit"
+            android:id="@+id/editname"
+            android:textColor="#0f22ef"
+            android:textIsSelectable="true"
+            android:textSize="15dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/editemail"
+            android:layout_alignStart="@+id/editemail"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

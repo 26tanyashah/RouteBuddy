@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.aditi.routebuddy.MapsActivity1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/cross1"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/cross"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/etDestination"
+        android:layout_toEndOf="@+id/etOrigin" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOrigin"
+        android:hint="Enter origin address"
+        android:background="@drawable/edit_text_style"
+        android:textColorHint="@color/grey"
+
+        android:drawableLeft="@drawable/search"
+        android:textColor="@android:color/primary_text_light"/>
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter destination address"
+        android:id="@+id/etDestination"
+        android:background="@drawable/edit_text_style"
+        android:textColorHint="@color/grey"
+
+        android:drawableLeft="@drawable/search"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_below="@+id/etOrigin"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        tools:layout="@layout/abc_action_bar_title_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnFindPath" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.83"
+        android:layout_below="@+id/etDestination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find path"
+        android:id="@+id/btnFindPath"
+        android:layout_below="@+id/recyclerView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_distance"
+        android:layout_marginStart="32dp"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/btnFindPath"
+        android:layout_toEndOf="@+id/btnFindPath" />
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_clock"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/etOrigin"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 km"
+        android:id="@+id/tvDistance"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 min"
+        android:id="@+id/tvDuration"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignEnd="@+id/cross1" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/cross"
+        android:layout_gravity="right"
+        android:layout_above="@+id/cross1"
+        android:layout_toEndOf="@+id/etOrigin" />
+</RelativeLayout>

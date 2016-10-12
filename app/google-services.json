@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "34335522544",
+    "firebase_url": "https://proj2-bba05.firebaseio.com",
+    "project_id": "proj2-bba05",
+    "storage_bucket": "proj2-bba05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34335522544:android:54942f03dc78c959",
+        "android_client_info": {
+          "package_name": "com.example.aditi.routebuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34335522544-t15da9480jj29rpdi8q3dgd8b3sb7u86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCNAtoTa526btziS1XEuEJBI3Yaw-dI1U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

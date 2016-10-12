@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ROUTE BUDDY"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/green"
+        android:textSize="50dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:src="@drawable/splash"
+        />
+
+</LinearLayout>
+
+
